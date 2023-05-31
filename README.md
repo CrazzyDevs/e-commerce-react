@@ -17,7 +17,7 @@ we're going to be building an e-commerce for furnitures.
 To get started, clone the repository and install the dependencies:
 
 ``
-git clone https://github.com/HadiFinance/Web.git
+git clone https://github.com/CrazzyDevs/e-commerce-react.git
 cd web
 npm install
 ```
