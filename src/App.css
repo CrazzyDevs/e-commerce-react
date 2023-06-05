@@ -1,0 +1,43 @@
+:root {
+  --yellow: linear-gradient(180deg, #FFD700 0%, #FCC419 100%);
+  --orange: #FF7F50;
+  --black: #1C1C1C;
+  --gray: #808080;
+  --purple: linear-gradient(180deg, #7E1FFF 0%, #A45BF5 100%);
+  --pink: #FFB6C1;
+  --glass: rgba(118, 115, 115, 0.54);
+  --boxShadow: 0px 19px 60px rgba(0, 0, 0, 0.12);
+  --smboxShadow: -79px 51px 60px rgba(0, 0, 0, 0.08);
+  --bg-color: hsl(240, 3%, 20%);
+  --bg-color-danger: hsl(0, 60%, 50%);
+  --bg-color-success: hsl(120, 40%, 45%);
+  --bg-color-clear: hsla(0, 0%, 0%, 0.8);
+  --text-color: hsl(0, 0%, 100%);
+  --accent-color: hsl(22, 98%, 63%);
+  --font-family: 'Roboto', sans-serif;
+  --border-radius: 0.5rem;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-family);
+}
+
+body {
+  /* background-color: var(--bg-color); */
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
