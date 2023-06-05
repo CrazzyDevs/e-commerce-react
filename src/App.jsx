@@ -5,7 +5,7 @@ import Navbar from "./Components/Navbar/Navbar";
 import { Route, Routes } from "react-router-dom";
 import Home from "./Components/Pages/Home/Home";
 import Footer from "./Components/Footer/Footer";
-import CartPage from "./Components/Pages/Cart/CartPage";
+import CartPage from "./Components/Pages/Cart/Cart";
 
 const App = () => {
 	return (
