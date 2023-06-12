@@ -1,11 +1,11 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
-import Armchair from '../../../assets/images/Armchair.png'
-import LoungeChair from '../../../assets/images/LoungeChair.png'
+import Armchair from '../../assets/images/Armchair.png'
+import LoungeChair from '../../assets/images/LoungeChair.png'
 
 const CartPage = () => {
 return (
-    <main className=" md:flex md:justify-evenly">
+    <main className="md:w-full md:flex md:justify-evenly">
         <div className="">
             <div className="my-8 text-justify center font-bold text-xl text-[#17183B]"> Cart <span className=" ml-3 font-normal text-base text-[#A2A3B1]"> 2 ITEMS</span></div>
             <div className="flex ">
@@ -38,7 +38,7 @@ return (
             <div className="text-[#17183B] font-bold">$169.99</div>
             </div>
             </div>
-            <div className="border p-3 md:w-1/4 my-8">
+            <div className="border p-3 md:w-1/3 my-8">
                 <p className="font-bold text-xl text-center">Order Summary</p>
                 <span className="flex justify-between py-2">
                     <p>Price</p>
