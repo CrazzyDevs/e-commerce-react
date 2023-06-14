@@ -6,7 +6,7 @@ function Products() {
 			<div className="ProductsContainer">
 				<div className="ProductLeft">left</div>
 				<div className="ProductRight">
-					
+					Hello product page
 				</div>
 			</div>
 		</div>
