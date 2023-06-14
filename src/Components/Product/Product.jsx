@@ -1,4 +1,4 @@
-import React from 'react'
+import {} from 'reactt'
 import './Product.css'
 
 const Product = () => {

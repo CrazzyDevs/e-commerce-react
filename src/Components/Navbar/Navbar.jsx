@@ -1,31 +1,24 @@
-import React from "react";
+import { } from "react";
 import "./Navbar.css";
-import { navbarData } from "../../Data";
-import { Link } from "react-router-dom";
+import {} from '@mui/material';
+import { SearchRounded } from "@mui/icons-material";
+import CartContents from "./CartContents";
+
+
 
 const Navbar = () => {
 	return (
-		<div className="Navbar bg-gray-900 text-white">
+		<div className="Navbar bg-white-500 text-black">
 			<div className="container mx-auto flex items-center justify-between py-4">
-				<div className="text-xl font-bold">Logo</div>
-				<div className="flex items-center">
-					<div className="mr-4">
-						<input
-							type="text"
-							placeholder="Search"
-							className="px-2 py-1 bg-gray-800 rounded"
-						/>
-					</div>
-					<div className="flex items-center">
-						{navbarData.map((item, index) => (
-							<div key={index} className="ml-4">
-								<Link to={item.path} className="text-white hover:text-gray-400">
-									{item.title}
-								</Link>
-							</div>
-						))}
-					</div>
-				</div>
+				{/* Logo or company image here */}
+				<label className="Logo">Codax<span>Shop</span></label>
+                { /* search box here */}
+               <div className='inputBox'>
+                 <SearchRounded className="search-icon"/>
+                 <input type='text' placeholder='Search'/>
+               </div>
+               {/* shopping carts items here */}
+                <CartContents/>
 			</div>
 		</div>
 	);
