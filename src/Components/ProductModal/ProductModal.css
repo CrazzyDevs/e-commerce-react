@@ -1,0 +1,247 @@
+.ModalWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.ModalWrapper .ant-modal {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.ModalWrapper .ant-modal-content {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.CartInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.SelectedTitle {
+    margin: 0 1rem;
+}
+
+.CartInfoAmount {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 1rem;
+    gap: 0.5rem;
+}
+
+.ModalContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    padding: 0.5rem;
+    gap: 0.5rem;
+    border-radius: 8px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.ModalLeft {
+    width: 50%;
+    height: 100%;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.ModalImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    border-radius: .5rem;
+    overflow: hidden;
+}
+
+.ImagePreview {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 30%;
+    gap: .5rem;
+    overflow-x: auto;
+}
+
+.ImagePreviewItem {
+    margin-right: 0.5rem;
+    cursor: pointer;
+}
+
+.ImagePreviewItem img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.ImagePreviewItem img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.ModalRight {
+    width: 50%;
+    height: 100%;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0.5rem;
+    overflow-y: auto;
+}
+
+.ModalRight .ModalDetails {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+
+    & .ModalTitle {
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+
+    & .ModalPrice {
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+
+    & .ModalDescription {
+        font-size: 1rem;
+        font-weight: 400;
+    }
+
+    & .Reviews {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: .5rem;
+    }
+
+    & .ModalTop {
+        width: 100%;
+        padding-bottom: .5rem;
+        border-bottom: 1px solid #2f3542;
+    }
+}
+
+.ModalButtons {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: .5rem;
+    margin-top: .5rem;
+
+    & .ModalButton {
+        width: 120px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        border: 1px solid #000000;
+        font-size: .9rem;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+
+        & i {
+            font-size: 1rem;
+            color: #2f3542;
+            background: transparent;
+            cursor: pointer;
+        }
+
+        &:hover {
+            transform: scale(1.05);
+            border: 1px solid #2f3542;
+        }
+    }
+
+    & :nth-child(1) {
+        /* dark grey bg */
+        background: #2f3542;
+        color: #ffffff;
+
+        & i {
+            color: #ffffff;
+        }
+
+        &:hover {
+            background: #000000;
+            color: #ffffff;
+        }
+    }
+
+}
+
+.ModalBottom {
+    width: 100%;
+    height: 100%;
+
+
+    & h3 {
+        font-size: 1rem;
+        font-weight: 600;
+    }
+}
+
+/* media queries */
+@media screen and (max-width: 768px) {
+    .ModalWrapper .ant-modal {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .ModalWrapper .ant-modal-content {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .ModalContent {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        overflow-y: auto;
+    }
+
+    .ModalLeft {
+        width: 100%;
+        max-width: 70%;
+    }
+
+    .ModalRight {
+        width: 100%;
+    }
+
+}
