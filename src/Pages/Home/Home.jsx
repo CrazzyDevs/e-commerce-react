@@ -49,7 +49,7 @@ const Home = () => {
           <div className="p-8">
              <div className="uppercase tracking-wide text-lg leading-tight text-slate-500 font-semibold">luxerious new <span className='text-slate-900'>desk</span></div>
                 <p className="mt-2 text-slate-500">
-                  Looking for good Looking furniture??? 
+                  Looking for good Looking furniture?? 
                 </p>
                 <p className="mt-1 text-slate-500">
                   You are in the right place.
