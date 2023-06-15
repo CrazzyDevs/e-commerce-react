@@ -1,9 +1,5 @@
-<<<<<<< HEAD
-import { lazy, Suspense } from "react";
-=======
 /* eslint-disable no-unused-vars */
 import React, { lazy, Suspense } from "react";
->>>>>>> 5949382371c2fb23e1fbef298a1309fdac09a8a3
 import "./App.css";
 import { Route, Routes } from "react-router-dom";
 
