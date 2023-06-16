@@ -1,0 +1,105 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-bg-color: #46c0b1;
+  --main-border-color: #dddcde;
+}
+body {
+  background-color: var(--main-bg-color);
+}
+.container {
+  width: 80%;
+  height: 90vh;
+  border-radius: 10px;
+  position: absolute;
+  background-color: #fff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 3px ;
+}
+.signUpImageContainer {
+  background-color: #e8efff;
+  height: 89vh;
+}
+.formContainer {
+  height: 89vh;
+  width: 80%;
+  margin: auto;
+  font-family: sans-serif;
+  padding: 40px 5px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.formContainer > * {
+  margin-top: 30px;
+}
+.hr-lines {
+  position: relative;
+  max-width: 200px;
+  margin-top: 20px;
+  text-align: center;
+  font-size: 12px;
+  color: var(--main-border-color);
+}
+.hr-lines::before {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 50px;
+  position: absolute;
+  top: 50%;
+  left: -45%;
+  background: var(--main-border-color);
+}
+.hr-lines::after {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 50px;
+  position: absolute;
+  top: 50%;
+  right: -45%;
+  background: var(--main-border-color);
+}
+.formDiv {
+  width: 100%;
+}
+.formDiv form > * {
+  margin-top: 10px;
+}
+.formDiv label {
+  font-size: 15px;
+}
+form input {
+  height: 45px;
+  width: 90%;
+  margin-top: 5px;
+  border: 2px solid var(--main-border-color);
+  border-radius: 5px;
+  padding-left: 10px;
+  font-size: 13px;
+  outline: none;
+}
+form input::placeholder {
+  color: var(--main-border-color);
+}
+form input[type=checkbox]{
+  width: 30px;
+  height: 15px;
+}
+.formDiv button {
+  height: 45px;
+  width: 90%;
+  border: none;
+  color: white;
+  background-color: var(--main-bg-color);
+  font-size: 15px;
+}
