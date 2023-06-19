@@ -1,7 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React, { lazy, Suspense } from "react";
 import "./App.css";
-import Navbar from "./Components/Navbar/Navbar";
 import { Route, Routes } from "react-router-dom";
 import Footer from "./Components/Footer/Footer";
 
@@ -14,7 +13,6 @@ const Account = lazy(() => import("./Pages/Account/Account"));
 const App = () => {
   return (
     <div className="App">
-      <Navbar />
       <Suspense fallback={<div>Loading...</div>}>
         <Routes>
           <Route path="/" element={<Home />} />
@@ -24,7 +22,7 @@ const App = () => {
           <Route path="/account" element={<Account />} />
         </Routes>
       </Suspense>
-      <Footer />
+      <Footer/>
     </div>
   );
 };
