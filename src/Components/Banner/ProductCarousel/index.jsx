@@ -1,7 +1,6 @@
 import React from "react";
 import { productdata } from "./productdata";
 import Carousel from "react-multi-carousel";
-import FacebookIcon from "@mui/icons-material/Facebook";
 import "react-multi-carousel/lib/styles.css";
 function ProductCarousel() {
   const responsive = {
@@ -23,8 +22,8 @@ function ProductCarousel() {
   };
 
   return (
-    <div className="">
-      <section className="flex">
+    <div className="w-[80%] mx-auto mt-16">
+      <section className="flex lg:flex-row flex-col">
         <div>
           <h1 className="text-3xl font-bold tracking-wide">Decorations</h1>
           <p className="text-base mt-4 w-[300px]">
@@ -35,9 +34,7 @@ function ProductCarousel() {
           </button>
         </div>
 
-        {/* add the carousel here */}
-
-        <div className="w-[60%] mx-auto flex gap-5">
+        <div className="w-[80%] mx-auto flex gap-5 lg:pt-0 pt-16">
           {productdata.map(
             ({ id, image, productName, price, tag, tag2, style, style2 }) => {
               return (
@@ -65,7 +62,7 @@ function ProductCarousel() {
         </div>
       </section>
 
-      <section className="flex pt-8">
+      <section className="flex lg:flex-row flex-col pt-8">
         <div>
           <h1 className="text-3xl font-bold tracking-wide">Architrct</h1>
           <p className="text-base mt-4 w-[300px]">
@@ -76,9 +73,7 @@ function ProductCarousel() {
           </button>
         </div>
 
-        {/* add the carousel here */}
-
-        <div className="w-[60%] mx-auto flex gap-5">
+        <div className="w-[80%] mx-auto flex gap-5 lg:pt-0 pt-16">
           {productdata.map(
             ({ id, image, productName, price, tag, tag2, style, style2 }) => {
               return (

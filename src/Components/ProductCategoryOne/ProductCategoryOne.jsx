@@ -1,166 +1,113 @@
-import {} from 'react'
-import '../../Components/ProductCategoryOne/ProductCategoryOne.css'
-import {} from '@mui/material'
-import { Favorite, ShoppingCart, CallRounded } from '@mui/icons-material'
+import {} from "react";
+import "../../Components/ProductCategoryOne/ProductCategoryOne.css";
+// import { AiOutlineHeart, ShoppingCart, CallRounded } from '@mui/icons-material'
+import { AiOutlineShoppingCart, AiOutlineHeart } from "react-icons/ai";
 
-function ProductCategoryOne({ ProductImage, ProductName, Price, HotSale, NewProduct }) {
+function ProductCategoryOne({
+  ProductImage,
+  ProductName,
+  Price,
+  HotSale,
+  NewProduct,
+}) {
   return (
-    <>
-    {/* this just for testing purpose because an API i yet to be created for calling */}
-      <h1 className="heading block mt-3 text-lg leading-tight font-medium text-slate-700 font-semibold"> <span> Products </span> Category </h1><br/>
-      <div className="boxContainer md:flex justify-center text-center m-5">
-         <div className="box">
-              <div className="image">
-                  <img src={ProductImage} />
-                  <div className="icons">
-                      <a href="#" className="cart-btn">{<Favorite/>}</a>
-                      <a href="#" className="cart-btn">{<ShoppingCart/>}</a>
-                      <a href="#" className="cart-btn">{<CallRounded/>}</a>
-                  </div>
-              </div>
-              <div className="content">
-                  <h3>{ProductName}</h3>
-                  <div className="price">${Price}</div>
-              </div>
+    <section className="p-5 pt-5">
+      <h4 className="text-3xl font-bold">Products</h4>
+      <div className="w-[80%] mx-auto grid lg:grid-cols-3 md:grid-cols-2 pt-5 gap-5 gap-y-8 place-items-center justify-center ">
+        <div className="w-[300px] bg-[white] hover:shadow-md rounded-md p-5">
+          <img src={ProductImage} alt="product" />
+           <p className="text-xl font-bold">{ProductName}</p>
+          <div className="flex justify-between items-center mt-2">
+            <div className="flex text-2xl items-center gap-3">
+              <a href="#" className="cart-btn">
+                {<AiOutlineHeart />}
+              </a>
+              <a href="#" className="cart-btn">
+                {<AiOutlineShoppingCart />}
+              </a>
+            </div>
+            <div className="price">${Price}</div>
           </div>
-          <div className="box">
-              <div className='New-box-red uppercase text-small leading-tight font-small font-300'>{HotSale}</div>
-              <div className="image">
-                  <img src={ProductImage} />
-                  <div className="icons">
-                      <a href="#" className="cart-btn">{<Favorite/>}</a>
-                      <a href="#" className="cart-btn">{<ShoppingCart/>}</a>
-                      <a href="#" className="cart-btn">{<CallRounded/>}</a>
-                  </div>
-              </div>
-                <div className="content">
-                    <h3>{ProductName}</h3>
-                    <div className="price">${Price}</div>
-                </div>
+        </div>
+        <div className="w-[300px] bg-[white] hover:shadow-md rounded-md p-5">
+          <img src={ProductImage} alt="product" />
+           <p className="text-xl font-bold">{ProductName}</p>
+          <div className="flex justify-between items-center mt-2">
+            <div className="flex text-2xl items-center gap-3">
+              <a href="#" className="cart-btn">
+                {<AiOutlineHeart />}
+              </a>
+              <a href="#" className="cart-btn">
+                {<AiOutlineShoppingCart />}
+              </a>
+            </div>
+            <div className="price">${Price}</div>
           </div>
-          <div className="box">
-              <div className="image">
-                  <img src={ProductImage} />
-                  <div className="icons">
-                      <a href="#" className="cart-btn">{<Favorite/>}</a>
-                      <a href="#" className="cart-btn">{<ShoppingCart/>}</a>
-                      <a href="#" className="cart-btn">{<CallRounded/>}</a>
-                  </div>
-              </div>
-                <div className="content">
-                    <h3>{ProductName}</h3>
-                    <div className="price">${Price}</div>
-                </div>
+        </div>
+        <div className="w-[300px] bg-[white] hover:shadow-md rounded-md p-5">
+          <img src={ProductImage} alt="product" />
+           <p className="text-xl font-bold">{ProductName}</p>
+          <div className="flex justify-between items-center mt-2">
+            <div className="flex text-2xl items-center gap-3">
+              <a href="#" className="cart-btn">
+                {<AiOutlineHeart />}
+              </a>
+              <a href="#" className="cart-btn">
+                {<AiOutlineShoppingCart />}
+              </a>
+            </div>
+            <div className="price">${Price}</div>
           </div>
-          <div className="box">
-              <div className='New-box-green uppercase text-small leading-tight font-small font-300'>{NewProduct}</div>
-              <div className="image">
-                  <img src={ProductImage} />
-                  <div className="icons">
-                      <a href="#" className="cart-btn">{<Favorite/>}</a>
-                      <a href="#" className="cart-btn">{<ShoppingCart/>}</a>
-                      <a href="#" className="cart-btn">{<CallRounded/>}</a>
-                  </div>
-              </div>
-                <div className="content">
-                    <h3>{ProductName}</h3> 
-                    <div className="price">${Price}</div>
-                </div>
+        </div>
+        <div className="w-[300px] bg-[white] hover:shadow-md rounded-md p-5">
+          <img src={ProductImage} alt="product" />
+           <p className="text-xl font-bold">{ProductName}</p>
+          <div className="flex justify-between items-center mt-2">
+            <div className="flex text-2xl items-center gap-3">
+              <a href="#" className="cart-btn">
+                {<AiOutlineHeart />}
+              </a>
+              <a href="#" className="cart-btn">
+                {<AiOutlineShoppingCart />}
+              </a>
+            </div>
+            <div className="price">${Price}</div>
           </div>
-          <div className="box">
-              <div className="image">
-                  <img src={ProductImage} />
-                  <div className="icons">
-                      <a href="#" className="cart-btn">{<Favorite/>}</a>
-                      <a href="#" className="cart-btn">{<ShoppingCart/>}</a>
-                      <a href="#" className="cart-btn">{<CallRounded/>}</a>
-                  </div>
-              </div>
-                <div className="content">
-                    <h3>{ProductName}</h3>
-                    <div className="price">${Price}</div>
-                </div>
+        </div>
+        <div className="w-[300px] bg-[white] hover:shadow-md rounded-md p-5">
+          <img src={ProductImage} alt="product" />
+           <p className="text-xl font-bold">{ProductName}</p>
+          <div className="flex justify-between items-center mt-2">
+            <div className="flex text-2xl items-center gap-3">
+              <a href="#" className="cart-btn">
+                {<AiOutlineHeart />}
+              </a>
+              <a href="#" className="cart-btn">
+                {<AiOutlineShoppingCart />}
+              </a>
+            </div>
+            <div className="price">${Price}</div>
           </div>
-          <div className="box">
-              <div className='New-box-red uppercase text-small leading-tight font-small font-300'>{HotSale}</div>
-              <div className="image">
-                  <img src={ProductImage} />
-                  <div className="icons">
-                      <a href="#" className="cart-btn">{<Favorite/>}</a>
-                      <a href="#" className="cart-btn">{<ShoppingCart/>}</a>
-                      <a href="#" className="cart-btn">{<CallRounded/>}</a>
-                  </div>
-              </div>
-                <div className="content">
-                    <h3>{ProductName}</h3>
-                    <div className="price">${Price}</div>
-                </div>
+        </div>
+        <div className="w-[300px] bg-[white] hover:shadow-md rounded-md p-5">
+          <img src={ProductImage} alt="product" />
+           <p className="text-xl font-bold">{ProductName}</p>
+          <div className="flex justify-between items-center mt-2">
+            <div className="flex text-2xl items-center gap-3">
+              <a href="#" className="cart-btn">
+                {<AiOutlineHeart />}
+              </a>
+              <a href="#" className="cart-btn">
+                {<AiOutlineShoppingCart />}
+              </a>
+            </div>
+            <div className="price">${Price}</div>
           </div>
-          <div className="box">
-              <div className="image">
-                  <img src={ProductImage} />
-                  <div className="icons">
-                      <a href="#" className="cart-btn">{<Favorite/>}</a>
-                      <a href="#" className="cart-btn">{<ShoppingCart/>}</a>
-                      <a href="#" className="cart-btn">{<CallRounded/>}</a>
-                  </div>
-              </div>
-                <div className="content">
-                    <h3>{ProductName}</h3>
-                    <div className="price">${Price}</div>
-                </div>
-          </div>
-          <div className="box">
-              <div className='New-box-green uppercase text-small leading-tight font-small font-300'>{NewProduct}</div>
-              <div className="image">
-                  <img src={ProductImage} />
-                  <div className="icons">
-                      <a href="#" className="cart-btn">{<Favorite/>}</a>
-                      <a href="#" className="cart-btn">{<ShoppingCart/>}</a>
-                      <a href="#" className="cart-btn">{<CallRounded/>}</a>
-                  </div>
-              </div>
-                <div className="content">
-                    <h3>{ProductName}</h3>
-                    <div className="price">${Price}</div>
-                </div>
-          </div>
-          <div className="box">
-              <div className="image">
-                  <img src={ProductImage} />
-                  <div className="icons">
-                      <a href="#" className="cart-btn">{<Favorite/>}</a>
-                      <a href="#" className="cart-btn">{<ShoppingCart/>}</a>
-                      <a href="#" className="cart-btn">{<CallRounded/>}</a>
-                  </div>
-              </div>
-                <div className="content">
-                    <h3>{ProductName}</h3>
-                    <div className="price">${Price}</div>
-                </div>
-          </div>
-          <div className="box">
-              <div className='New-box-red uppercase text-small leading-tight font-small font-300'>{HotSale}</div>
-              <div className="image">
-                  <img src={ProductImage} />
-                  <div className="icons">
-                      <a href="#" className="cart-btn">{<Favorite/>}</a>
-                      <a href="#" className="cart-btn">{<ShoppingCart/>}</a>
-                      <a href="#" className="cart-btn">{<CallRounded/>}</a>
-                  </div>
-              </div>
-                <div className="content">
-                    <h3>{ProductName}</h3>
-                    <div className="price">${Price}</div>
-                </div>
-          </div>
-      </div><br/>
-      <a href={'#'} className="m-2 mt-1 text-lg leading-tight font-medium text-green-400 font-semibold underline">
-        View Products
-      </a>
-    </>
-  )
+        </div>
+      </div>
+      
+    </section>
+  );
 }
 
-export default ProductCategoryOne
-
+export default ProductCategoryOne;

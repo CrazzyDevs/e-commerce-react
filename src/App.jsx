@@ -2,6 +2,7 @@
 import React, { lazy, Suspense } from "react";
 import "./App.css";
 import { Route, Routes } from "react-router-dom";
+import Footer from "./Components/Footer/Footer";
 
 const Home = lazy(() => import("./Pages/Home/Home"));
 const Products = lazy(() => import("./Pages/Products/Products"));
@@ -14,13 +15,14 @@ const App = () => {
     <div className="App">
       <Suspense fallback={<div>Loading...</div>}>
         <Routes>
-          < Route path="/" element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route path="/products" element={<Products />} />
           <Route path="/cart" element={<Cart />} />
           <Route path="/help" element={<Help />} />
           <Route path="/account" element={<Account />} />
         </Routes>
       </Suspense>
+      <Footer/>
     </div>
   );
 };
