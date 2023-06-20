@@ -5,14 +5,16 @@ const Footer = () => {
     <section className="pt-12">
       <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-5 p-12 lg:place-items-center lg:justify-center justify-start place-items-start">
         <div>
-          <p className="text-3xl font-bold">FurniMart.</p>
+          <p className="text-3xl font-bold Logo">
+            codax <span>Shop</span>
+          </p>
           <p className="mt-3">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum sint
             quidem quia distinctio minus. Ullam mollitia porro in eveniet
             magnam.
           </p>
 
-          <p className="mt-6">FurniMart, 2023.</p>
+          <p className="mt-6">codaxShop, 2023.</p>
         </div>
         <div className="w-[200px] h-full mt-3 lg:mt-0 md:mt-0">
           <p className="font-bold text-xl">Contact Us</p>
@@ -54,7 +56,7 @@ const Footer = () => {
 
           <ul className="flex flex-col gap-3 lg:mt-6 mt-3">
             <li className="cursor-pointer hover:opacity-50">Home</li>
-            <li className="cursor-pointer hover:opacity-50">About FurniMart</li>
+            <li className="cursor-pointer hover:opacity-50">About codeShop</li>
             <li className="cursor-pointer hover:opacity-50">Products</li>
             <li className="cursor-pointer hover:opacity-50">Privacy Policy</li>
           </ul>
