@@ -14,7 +14,9 @@ const SideBar = () => {
 		<>
 			<div className="w-[270px] ml-10 px-2 pb-20 bg-blue-400 py-2 mt-10 mb-10">
 				<div className="flex  w-full mt-2 justify-between">
-					<h1 className="text-black text-2xl  font-bold">FILTER BY</h1>
+					<h1 className="text-black text-2xl  font-bold">
+						FILTER BY
+					</h1>
 					<p className="text-gray-200">clear All</p>
 				</div>
 				<div className="w-full">
@@ -23,18 +25,16 @@ const SideBar = () => {
 							<span>
 								<IoIosArrowDown />
 							</span>{" "}
-							CHAIR DESIGN
+							Furniture DESIGN
 						</h6>
 						<p className="text-gray-200">clear</p>
 					</div>
 					<ul className="mt-3">
-						<li className="font-bold">All Chairs</li>
-						<li>Dining Chairs</li>
-						<li>Lounge Chairs</li>
-						<li>Stools and Bar Stools</li>
-						<li>Ottomans and Footstools</li>
-						<li>Benches</li>
-						<li>Office Chairs</li>
+						<li className="font-bold">All Products</li>
+						<li>Chairs</li>
+						<li>Table</li>
+						<li>Bed</li>
+						<li>Cupboards</li>
 					</ul>
 				</div>
 
@@ -50,16 +50,10 @@ const SideBar = () => {
 					<ul className="w-full grid mt-3 grid-cols-2">
 						<li>Red</li>
 						<li>Blue</li>
-						<li>Orange</li>
-						<li>Purple</li>
-						<li>Yellow</li>
-						<li>Green</li>
-						<li>Brown</li>
 						<li>Black</li>
 						<li>White</li>
-						<li>Grey</li>
-						<li>Pink</li>
-						<li>Beige</li>
+						<li>Brown</li>
+						<li>Green</li>
 					</ul>
 				</div>
 
@@ -73,13 +67,10 @@ const SideBar = () => {
 						</h6>
 					</div>
 					<ul className="mt-3">
-						<li>Ash</li>
-						<li>Beech</li>
-						<li>Maple</li>
-						<li>Oak</li>
-						<li>Pine</li>
-						<li>Walnut</li>
+						<li>Wood</li>
 						<li>Metal</li>
+						<li>Glass</li>
+						<li>Leather</li>
 					</ul>
 				</div>
 

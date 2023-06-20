@@ -11,20 +11,20 @@ const Help = lazy(() => import("./Pages/Help/Help"));
 const Account = lazy(() => import("./Pages/Account/Account"));
 
 const App = () => {
-  return (
-    <div className="App">
-      <Suspense fallback={<div>Loading...</div>}>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/products" element={<Products />} />
-          <Route path="/cart" element={<Cart />} />
-          <Route path="/help" element={<Help />} />
-          <Route path="/account" element={<Account />} />
-        </Routes>
-      </Suspense>
-      <Footer/>
-    </div>
-  );
+	return (
+		<div className="App">
+			<Suspense fallback={<div>Loading...</div>}>
+				<Routes>
+					<Route path="/" element={<Home />} />
+					<Route path="/products" element={<Products />} />
+					<Route path="/cart" element={<Cart />} />
+					<Route path="/help" element={<Help />} />
+					<Route path="/account" element={<Account />} />
+				</Routes>
+			</Suspense>
+			<Footer />
+		</div>
+	);
 };
 
 export default App;

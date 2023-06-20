@@ -1,32 +1,32 @@
 /* shoppingCart styles here */
-.shoppingCart{
-    position: relative;
-    width: 30px;
-    height: 30px;
-    display: flex;
-    justify-content: center;
+.shoppingCart {
+	position: relative;
+	width: 30px;
+	height: 30px;
+	display: flex;
+	justify-content: center;
 }
 /* cart styles her */
-.shoppingCart .cart{
-    font-size: 30px;
-    color: #373848;
+.shoppingCart .cart {
+	font-size: 30px;
+	color: #373848;
 }
 /* style for the rounded cart counter */
-.shoppingCart .cart_contents{
-    width: 20px;
-    height: 20px;
-    min-width: 20px;
-    min-height: 20px;
-    background: lightgreen;
-    border-radius: 100%;
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    top: -8px;
-    right: 0;
+.shoppingCart .cart_contents {
+	width: 20px;
+	height: 20px;
+	min-width: 20px;
+	min-height: 20px;
+	background: lightgreen;
+	border-radius: 100%;
+	display: flex;
+	justify-content: center;
+	position: absolute;
+	top: -8px;
+	right: 0;
 }
-.shoppingCart .cart_contents{
-    font-weight: 500;
-    color: #fff;
+.shoppingCart .cart_contents {
+	font-weight: 500;
+	color: #fff;
 }
 /* cart styles ends here */

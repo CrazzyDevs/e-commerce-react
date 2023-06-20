@@ -1,6 +1,6 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+	margin: 0;
+	padding: 0;
 }
 /* .Home{
   align-items: center;
@@ -9,83 +9,83 @@
   margin-top: 40px;
   justify-content: center;
 } */
-main{
-    width: 100%;
-    height: 100%;
-    margin-top: 15px;
-    overflow: hidden;
+main {
+	width: 100%;
+	height: 100%;
+	margin-top: 15px;
+	overflow: hidden;
 }
 
-  .banner{
-    width: 100%;
-    height: 23.5rem;
-    border-radius: 10px;
-    /* background: url('../../Components/Banner/BannerImages/Banner6.png') no-repeat center; */
-    background: #fafbf9;
-    background: cover;
-    position: relative; 
-    display: flex;
-    align-items: center;
-    padding: 0px 10px;
-  }
-  .bannerImage{
-    position: absolute;
-    right: 10px;
-    width: 50%;
-    margin-bottom: -60px;
-  }
-  /* media query here */
-  @media(max-width:900px){
-    html {
-      scroll-behavior: smooth;
-  }
-  .bannerImage{
-    right: 5px;
-    width: 65%;
-    margin-bottom: -210px;
-  }
-  }
-
-  @media(max-width:758px){
-    html {
-      font-size: 90%;
-      scroll-behavior: smooth;
-  }
-  .banner{
-    height: 16rem;
-    background: #f8fcfa;
-  }
-  .bannerImage{
-    right: 1px;
-    width: 70%;
-    margin-bottom: -260px;
-  }
-  section{
-    display: block;
-  }
-  }
-  @media(max-width:450px){
-    .bannerImage{
-      width: 100%;
-    }
-    .BannerImage2{
-      width: 200px;
-      margin-bottom: 10px;
-    }
-    .banner{
-      height: 18.5rem;
-      background: #f8fcfa;
-    }
-  }
-  section{
-    background: #fff;
-  }
-
-.BannerImage2{
-  width: 100%;
-  margin-bottom: -5px;
-  box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.404);
+.banner {
+	width: 100%;
+	height: 23.5rem;
+	border-radius: 10px;
+	/* background: url('../../Components/Banner/BannerImages/Banner6.png') no-repeat center; */
+	background: #fafbf9;
+	background: cover;
+	position: relative;
+	display: flex;
+	align-items: center;
+	padding: 0px 10px;
 }
-.company{
-  box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.253);
+.bannerImage {
+	position: absolute;
+	right: 10px;
+	width: 50%;
+	margin-bottom: -60px;
+}
+/* media query here */
+@media (max-width: 900px) {
+	html {
+		scroll-behavior: smooth;
+	}
+	.bannerImage {
+		right: 5px;
+		width: 65%;
+		margin-bottom: -210px;
+	}
+}
+
+@media (max-width: 758px) {
+	html {
+		font-size: 90%;
+		scroll-behavior: smooth;
+	}
+	.banner {
+		height: 16rem;
+		background: #f8fcfa;
+	}
+	.bannerImage {
+		right: 1px;
+		width: 70%;
+		margin-bottom: -260px;
+	}
+	section {
+		display: block;
+	}
+}
+@media (max-width: 450px) {
+	.bannerImage {
+		width: 100%;
+	}
+	.BannerImage2 {
+		width: 200px;
+		margin-bottom: 10px;
+	}
+	.banner {
+		height: 18.5rem;
+		background: #f8fcfa;
+	}
+}
+section {
+	background: #fff;
+}
+
+.BannerImage2 {
+	width: 100%;
+	margin-bottom: -5px;
+	box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.404);
+}
+.company {
+	box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.253);
 }

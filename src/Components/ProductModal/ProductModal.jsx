@@ -90,13 +90,19 @@ const ProductModal = ({
 				title={
 					<>
 						<div className="CartInfo">
-							<div className="SelectedTitle">{selectedProduct.title}</div>
+							<div className="SelectedTitle">
+								{selectedProduct.title}
+							</div>
 							<div className="CartInfoAmount">
 								<i className="fas fa-info-circle"></i>
 								<span className="CartLength">
 									{cartLength} items in the cart
 								</span>
-								(<span className="CartAmount">${totalAmount}</span>)
+								(
+								<span className="CartAmount">
+									${totalAmount}
+								</span>
+								)
 							</div>
 						</div>
 					</>
@@ -112,7 +118,10 @@ const ProductModal = ({
 				<div className="ModalContent" onClick={onContentClick}>
 					<div className="ModalLeft">
 						<div className="ModalImage">
-							<img src={selectedImage} alt={selectedProduct.title} />
+							<img
+								src={selectedImage}
+								alt={selectedProduct.title}
+							/>
 						</div>
 						<div className="ImagePreview">
 							{selectedProduct.images.map((image, index) => (
@@ -121,7 +130,10 @@ const ProductModal = ({
 									key={index}
 									onClick={() => onImagePreviewClick(image)}
 								>
-									<img src={image} alt={selectedProduct.title} />
+									<img
+										src={image}
+										alt={selectedProduct.title}
+									/>
 								</div>
 							))}
 						</div>
@@ -129,13 +141,17 @@ const ProductModal = ({
 					<div className="ModalRight">
 						<div className="ModalDetails">
 							<div className="ModalTop">
-								<h2 className="ModalTitle">{selectedProduct.title}</h2>
+								<h2 className="ModalTitle">
+									{selectedProduct.title}
+								</h2>
 								{selectedProduct.category && (
 									<span className="ModalCategory">
 										{selectedProduct.category.name}
 									</span>
 								)}
-								<p className="ModalPrice">${selectedProduct.price}</p>
+								<p className="ModalPrice">
+									${selectedProduct.price}
+								</p>
 								{showSuccessMessage && (
 									<div className="SuccessMessage">
 										<i className="fas fa-check-circle text-green-500"></i>{" "}
@@ -154,12 +170,17 @@ const ProductModal = ({
 												</>
 											) : (
 												<div className="CartMessage text-green-500 font-bold text-sm flex items-center py-1 px-2 rounded-md">
-													<i className="fas fa-info-circle"></i> &nbsp; Product
-													is in the cart
+													<i className="fas fa-info-circle"></i>{" "}
+													&nbsp; Product is in the
+													cart
 												</div>
 											)}
-											<button className="ModalButton" onClick={buyNow}>
-												<i className="fas fa-shopping-bag"></i> &nbsp; checkout
+											<button
+												className="ModalButton"
+												onClick={buyNow}
+											>
+												<i className="fas fa-shopping-bag"></i>{" "}
+												&nbsp; checkout
 											</button>
 										</>
 									) : (
@@ -176,36 +197,51 @@ const ProductModal = ({
 													</>
 												) : (
 													<>
-														<i className="fas fa-shopping-cart"></i> &nbsp; Add
-														to cart
+														<i className="fas fa-shopping-cart"></i>{" "}
+														&nbsp; Add to cart
 													</>
 												)}
 											</button>
 
-											<button className="ModalButton" onClick={buyNow}>
-												<i className="fas fa-shopping-bag"></i> &nbsp; checkout
+											<button
+												className="ModalButton"
+												onClick={buyNow}
+											>
+												<i className="fas fa-shopping-bag"></i>{" "}
+												&nbsp; checkout
 											</button>
 											<i
 												className="fas fa-heart"
-												style={{ fontSize: "20px", marginLeft: "10px" }}
+												style={{
+													fontSize: "20px",
+													marginLeft: "10px",
+												}}
 											></i>
 										</>
 									)}
 								</div>
 							</div>
 							<div className="Reviews">
-								<div className="Stars text-yellow-500">{reviewsStars(4)}</div>
+								<div className="Stars text-yellow-500">
+									{reviewsStars(4)}
+								</div>
 								<div className="ReviewCount">3,000 reviews</div>
 							</div>
 							<div className="Material">
 								{/* tailwind */}
-								<h3 className="text-1xl font-bold text-gray-700">Material</h3>
-								<p>{selectedProduct.material || "Not available"}</p>
+								<h3 className="text-1xl font-bold text-gray-700">
+									Material
+								</h3>
+								<p>
+									{selectedProduct.material ||
+										"Not available"}
+								</p>
 							</div>
 							<p>
 								<i className="far fa-calendar-alt"></i> &nbsp;{" "}
 								{selectedProduct.createdAt}
-								Delivery by: <span style={{ color: "green" }}>Friday</span>
+								Delivery by:{" "}
+								<span style={{ color: "green" }}>Friday</span>
 							</p>
 							<div className="ModalBottom">
 								<div className="ModalDescription">

@@ -1,6 +1,5 @@
 import "./Product.css";
 
-
 const Product = ({ data }) => {
 	const { images, title, price, description } = data;
 	const image = images[0];

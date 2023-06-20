@@ -1,58 +1,58 @@
-.Navbar{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 20px;
-    height: 60px;
-    width: 100%;
-    background: white;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 101;
-    box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.1);
+.Navbar {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 10px 20px;
+	height: 60px;
+	width: 100%;
+	background: white;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 101;
+	box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.1);
 }
-.Logo{
-    font-size: 24px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: 600;
+.Logo {
+	font-size: 24px;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	font-weight: 600;
 }
-.Logo>span{
-    background: lightgreen;
-    color: #fff;
-    padding-left: 3.5px;
-    padding-right: 3.5px;
-    padding-bottom: 2px;
-    border-radius: 5px;
+.Logo > span {
+	background: lightgreen;
+	color: #fff;
+	padding-left: 3.5px;
+	padding-right: 3.5px;
+	padding-bottom: 2px;
+	border-radius: 5px;
 }
-.inputBox{
-    display: flex;
-    width: 45%;
-    background: #fff;
-    border-radius: 25px;
-    box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.15);
-    align-items: center;
-    overflow: hidden;
-    padding: 8px 15px;
-    margin: 5px;
+.inputBox {
+	display: flex;
+	width: 45%;
+	background: #fff;
+	border-radius: 25px;
+	box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.15);
+	align-items: center;
+	overflow: hidden;
+	padding: 8px 15px;
+	margin: 5px;
 }
-.inputBox .MuiSvgIcon-root{
-    font-size: 18px;
-    color: #373848;
-  }
-.inputBox input{
-    width: 100%;
-    height: 100%;
-    outline: none;
-    border: none;
-    background: transparent;
-    color: #787a84;
-    padding-left: 8px;
-    font-size: 14px;
-    font-weight: 500;
+.inputBox .MuiSvgIcon-root {
+	font-size: 18px;
+	color: #373848;
 }
-@media(max-width:768px){
-    .Logo{
-        font-size: medium;
-    }
+.inputBox input {
+	width: 100%;
+	height: 100%;
+	outline: none;
+	border: none;
+	background: transparent;
+	color: #787a84;
+	padding-left: 8px;
+	font-size: 14px;
+	font-weight: 500;
+}
+@media (max-width: 768px) {
+	.Logo {
+		font-size: medium;
+	}
 }

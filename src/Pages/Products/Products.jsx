@@ -99,7 +99,10 @@ const Products = () => {
 				</div>
 				<div className="ProductRight">
 					{products.map((product) => (
-						<Suspense fallback={<SkeletonProduct />} key={product.id}>
+						<Suspense
+							fallback={<SkeletonProduct />}
+							key={product.id}
+						>
 							<motion.div
 								whileHover={{ scale: 1.05 }}
 								whileTap={{ scale: 0.95 }}
