@@ -3,6 +3,9 @@ import "./App.css";
 import Navbar from "./Components/Navbar/Navbar";
 import { Route, Routes } from "react-router-dom";
 import Footer from "./Components/Footer/Footer";
+import Shipping from "./Components/Checkout/Shipping";
+import Payment from "./Components/Checkout/Payment";
+import Address from "./Components/Checkout/Address";
 
 const Home = lazy(() => import("./Pages/Home/Home"));
 const Products = lazy(() => import("./Pages/Products/Products"));
@@ -21,6 +24,9 @@ const App = () => {
           <Route path="/cart" element={<Cart />} />
           <Route path="/help" element={<Help />} />
           <Route path="/account" element={<Account />} />
+          <Route path="/Shipping" element={<Shipping />} />
+          <Route path="/Payment" element={<Payment />} />
+          <Route path="/Address" element={<Address />} />
         </Routes>
       </Suspense>
       <Footer />
