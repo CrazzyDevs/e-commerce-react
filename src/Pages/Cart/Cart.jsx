@@ -1,7 +1,7 @@
-/* eslint-disable no-unused-vars */
 import React from "react";
-import Armchair from "../../assets/images/Armchair.png";
-import LoungeChair from "../../assets/images/LoungeChair.png";
+import Armchair from "../../assets/Armchair.png";
+import LoungeChair from "../../assets/LoungeChair.png";
+import { Link } from "react-router-dom";
 
 const CartPage = () => {
 	return (
@@ -116,7 +116,7 @@ const CartPage = () => {
 						</span>
 					</div>
 					<button className=" w-full p-2 rounded text-white bg-[#3AA39F]">
-						Proceed to Checkout
+						<Link to="/address"> Proceed to Checkout</Link>
 					</button>
 				</div>
 			</div>

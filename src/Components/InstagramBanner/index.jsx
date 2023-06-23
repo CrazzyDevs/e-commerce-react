@@ -7,7 +7,7 @@ function InstagramBanner() {
 				<Link to="/products">
 					<div className="absolute flex items-center justify-center w-full h-full cursor-pointer">
 						<p className="bg-white opacity-75 lg:w-[500px] w-[250px] p-8 text-center text-[25px] rounded-[25px] uppercase tracking-wide font-semibold">
-							Shop 50% OFF NOW!
+							Shop 50% OFF here!
 						</p>
 					</div>
 				</Link>

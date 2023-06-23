@@ -1,8 +1,11 @@
 /* eslint-disable no-unused-vars */
 import React, { lazy, Suspense } from "react";
-import "./App.css";
+import "./index.css";
 import { Route, Routes } from "react-router-dom";
 import Footer from "./Components/Footer/Footer";
+import Shipping from "./Pages/Checkout/Shipping";
+import Address from "./Pages/Checkout/Address";
+import Payment from "./Pages/Checkout/Payment";
 
 const Home = lazy(() => import("./Pages/Home/Home"));
 const Products = lazy(() => import("./Pages/Products/Products"));
@@ -20,6 +23,9 @@ const App = () => {
 					<Route path="/cart" element={<Cart />} />
 					<Route path="/help" element={<Help />} />
 					<Route path="/account" element={<Account />} />
+					<Route path="/shipping" element={<Shipping />} />
+					<Route path="/address" element={<Address />} />
+					<Route path="/payment" element={<Payment />} />
 				</Routes>
 			</Suspense>
 			<Footer />
