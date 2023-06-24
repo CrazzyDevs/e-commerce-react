@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import React, { lazy, Suspense } from "react";
 import "./index.css";
 import { Route, Routes } from "react-router-dom";
