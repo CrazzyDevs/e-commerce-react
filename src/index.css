@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 .popup {
 	position: fixed;
 	top: 0;
@@ -28,18 +27,6 @@
 .radio_radio::after {
 	content: "";
 	width: 100%;
-	/* padding: 10px; */
-	height: 100%;
-	display: block;
-	background: #4ade80;
-	border-radius: 50%;
-	transform: scale(0);
-	transition: transform 0.15s;
-}
-.radio_radios::after {
-	content: "";
-	width: 100%;
-	/* padding: 10px; */
 	height: 100%;
 	display: block;
 	background: #4ade80;
@@ -57,22 +44,11 @@
 	box-sizing: border-box;
 	padding: 3px;
 }
-.radio_radios {
-	width: 1.5em;
-	height: 1.5em;
-	border: 2px solid #4ade80;
-	border-radius: 50%;
-	margin-right: 10px;
-	box-sizing: border-box;
-	padding: 3px;
-}
 
 .radio_input:checked + .radio_radio::after {
 	transform: scale(1);
 }
-.radio_inputs:checked + .radio_radios::after {
-	transform: scale(1);
-}
+
 .required-field:required {
 	border-color: red;
 }
