@@ -1,15 +1,15 @@
 
 import './App.css'
-import FormContainer from './Components/FormContainer'
-import SignUpImage from './Components/SignUpImage'
+import Home from './Components/Home'
+import  Main from './Components/main'
+import { AuthProvider } from './Context/AuthContext'
 
 const App = () => {
   return (
-    <div className='container'>
-      <FormContainer />
-      <SignUpImage />
-    </div>
+      <AuthProvider>
+        <Main />
+      </AuthProvider>
   )
-}
 
+}
 export default App

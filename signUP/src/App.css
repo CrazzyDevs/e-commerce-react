@@ -27,19 +27,22 @@ body {
 .signUpImageContainer {
   background-color: #e8efff;
   height: 89vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .formContainer {
   height: 89vh;
   width: 80%;
   margin: auto;
   font-family: sans-serif;
-  padding: 40px 5px;
+  padding: 35px 5px;
   display: flex;
   align-items: center;
   flex-direction: column;
 }
 .formContainer > * {
-  margin-top: 30px;
+  margin-top: 20px;
 }
 .hr-lines {
   position: relative;
@@ -73,7 +76,7 @@ body {
   width: 100%;
 }
 .formDiv form > * {
-  margin-top: 10px;
+  margin-top: 15px;
 }
 .formDiv label {
   font-size: 15px;
@@ -92,8 +95,13 @@ form input::placeholder {
   color: var(--main-border-color);
 }
 form input[type=checkbox]{
-  width: 30px;
-  height: 15px;
+  width: 20px;
+  height: 12px;
+}
+form input[type=email]:focus, 
+form input[type=password]:focus{
+    outline: none;
+    border: 3px solid var(--main-bg-color);
 }
 .formDiv button {
   height: 45px;
@@ -102,4 +110,14 @@ form input[type=checkbox]{
   color: white;
   background-color: var(--main-bg-color);
   font-size: 15px;
+}
+.forgotPassword {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+}
+hr.line {
+  width: 90%;
+  background-color: var(--main-border-color);
 }
