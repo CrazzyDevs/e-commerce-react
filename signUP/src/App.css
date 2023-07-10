@@ -8,9 +8,18 @@
   --main-bg-color: #46c0b1;
   --main-border-color: #dddcde;
 }
+@font-face {
+  font-family: OpenSans;
+  src: url(./fonts/OpenSans-Bold.ttf);
+}
+@font-face {
+  font-family: OpanSans-regular;
+  src: url(./fonts/OpenSans-Regular.ttf);
+}
 body {
   background-color: var(--main-bg-color);
 }
+
 .container {
   width: 80%;
   height: 90vh;
@@ -23,9 +32,11 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 3px ;
+  font-family: OpanSans-regular;
 }
 .signUpImageContainer {
   background-color: #e8efff;
+  max-height: 89vh;
   height: 89vh;
   display: flex;
   justify-content: center;
@@ -33,53 +44,60 @@ body {
 }
 .formContainer {
   height: 89vh;
+  max-height: 89vh;
   width: 80%;
   margin: auto;
-  font-family: sans-serif;
   padding: 35px 5px;
   display: flex;
   align-items: center;
   flex-direction: column;
+  justify-content: center;
 }
 .formContainer > * {
   margin-top: 20px;
 }
 .hr-lines {
   position: relative;
-  max-width: 200px;
-  margin-top: 20px;
+  width: 90%;
   text-align: center;
+  margin-top: 30px;
   font-size: 12px;
+  font-family: OpenSans;
   color: var(--main-border-color);
 }
 .hr-lines::before {
   content: "";
   display: block;
   height: 1px;
-  width: 50px;
+  width: 100px;
   position: absolute;
   top: 50%;
-  left: -45%;
+  left: -1%;
   background: var(--main-border-color);
 }
 .hr-lines::after {
   content: "";
   display: block;
   height: 1px;
-  width: 50px;
+  width: 100px;
   position: absolute;
   top: 50%;
-  right: -45%;
+  right: -1%;
   background: var(--main-border-color);
 }
 .formDiv {
   width: 100%;
+}
+.formDiv h1 {
+  font-family: OpenSans;
+  text-align: center;
 }
 .formDiv form > * {
   margin-top: 15px;
 }
 .formDiv label {
   font-size: 15px;
+  font-family: OpenSans;
 }
 form input {
   height: 45px;
@@ -90,6 +108,7 @@ form input {
   padding-left: 10px;
   font-size: 13px;
   outline: none;
+  font-family: OpanSans-regular;
 }
 form input::placeholder {
   color: var(--main-border-color);
@@ -110,6 +129,11 @@ form input[type=password]:focus{
   color: white;
   background-color: var(--main-bg-color);
   font-size: 15px;
+  font-family: OpenSans;
+}
+.googleBtn {
+  box-shadow: 0px 1px 3px #888888;
+  margin-top: 20px;
 }
 .forgotPassword {
   display: flex;
@@ -120,4 +144,38 @@ form input[type=password]:focus{
 hr.line {
   width: 90%;
   background-color: var(--main-border-color);
+}
+.dontHaveAnAccount, .HaveAnAccount {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+}
+.dontHaveAnAccount > *, 
+.HaveAnAccount > * {
+    padding-left: 10px ;
+}
+.dashboard {
+  width: 100%;
+  height: 500PX;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.dashboard > * {
+  margin-top: 50px;
+}
+.dashboard h1 {
+  text-align: center;
+}
+.dashboard button {
+  height: 45px;
+  width: 40%;
+  border: none;
+  color: white;
+  background-color: var(--main-bg-color);
+  font-size: 15px;
+  font-family: OpenSans;
 }

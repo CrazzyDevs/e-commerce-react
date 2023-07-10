@@ -23,6 +23,9 @@ const SignUp = () => {
           confirmPasswordRef.current.value) {
             return setPasswordError('Passwords do not match')
           }
+          if (passwordRef.current.value.length < 6) {
+            return setPasswordError('Password must contain at least 6 characters')
+          }
         try {
           setAccountError('')
           setPasswordError('')
@@ -34,18 +37,16 @@ const SignUp = () => {
         }
 
         setLoading(false)
-          // .then( (userCredentials) => {
-          //   console.log(userCredentials)
-          // })
-          // .catch( (error) => {
-          //   console.log(error); 
-          // })
     }
   
 
   return (
     <div className="formDiv">
+      <h1>Sign Up</h1>
       <form onSubmit={handleSubmit}>
+      {
+        accountError && <p>{accountError}</p>
+       }
         <div className='email'>
             <label>Email Address</label>
             <input type="email" placeholder="Email Address" ref={emailRef} required></input>
@@ -58,7 +59,7 @@ const SignUp = () => {
             <label>Confirm Password</label>
             <input type="password" placeholder='Confirm Password' ref={confirmPasswordRef}></input>
             {
-              passwodError&& <p style={{color: 'red'}}>{passwodError} </p>
+              passwodError&& <p style={{color: 'red', fontSize: 15}}>{passwodError} </p>
             }
         </div>
         <div className='submitBtn'>
@@ -67,11 +68,9 @@ const SignUp = () => {
       </form>
       <hr className='line' style={{marginTop: 30}}/>  
       <div className='HaveAnAccount'>
-        <p>Already have an account? </p><Link to={"/login"}>Log in</Link>
+        <p>Already have an account? </p><Link to={"/login"} style={{fontSize: 13, color: "red", textDecoration: 'none'}}>Log in</Link>
       </div>  
-       {
-        accountError && <p>{accountError}</p>
-       }
+
     </div>
   )
 }
