@@ -45,7 +45,7 @@ const SignUp = () => {
       <h1>Sign Up</h1>
       <form onSubmit={handleSubmit}>
       {
-        accountError && <p>{accountError}</p>
+        accountError && <p style={{color: 'red', textAlign: 'center'}}>{accountError}</p>
        }
         <div className='email'>
             <label>Email Address</label>
