@@ -53,7 +53,7 @@ main {
 
 @media (max-width: 758px) {
 	html {
-		font-size: 90%;
+		font-size: 100%;
 		scroll-behavior: smooth;
 	}
 	.banner {
