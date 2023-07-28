@@ -1,101 +1,125 @@
 .boxContainer {
-	display: flex;
-	flex-wrap: wrap;
-	gap: 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.1rem;
 }
 
-@media (max-width: 768px) {
-	html {
-		font-size: 80%;
-	}
-	.boxContainer {
-		margin: 5px 2px;
-	}
-	.boxContainer .box .price {
-		font-size: 0.8rem;
-		color: #636262;
-		font-weight: bolder;
-		padding-top: 1px;
-		margin: 10px;
-		margin-left: -49px;
-	}
+@media(max-width:768px){
+    html{
+        font-size: 90%;
+    }
+    .boxContainer {
+        margin: 5px 2px;
+    }
+    .boxContainer .box .content h3 {
+        font-size: 1.3rem;
+        font-weight: 500;
+    }
+    .boxContainer .box .price {
+        font-size: 2.0rem;
+        color: #636262;
+        font-weight: bolder;
+    }  
 }
 .boxContainer .box {
-	box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.267);
-	border-radius: 0.5rem;
-	border: 0.1rem solid rgba(0, 0, 0, 0.1);
-	position: relative;
-	width: 170px;
-	height: auto;
+    box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, 0.267);
+    border-radius: .5rem;
+    border: .1rem solid rgba(0, 0, 0, .1);
+    position: relative;
+    width: 170px;
+    height: auto;
 }
-.New-box-green {
-	background: rgb(2, 221, 2);
-	width: 55px;
-	position: absolute;
-	top: -4px;
-	left: -3px;
-	color: #fff;
+.New-box-green{
+    background: rgb(2, 221, 2);
+    width: 55px;
+    position: absolute;
+    top: -4px;
+    right: -3px;
+    color: #fff;
 }
-.New-box-red {
-	background: rgb(255, 61, 27);
-	width: 55px;
-	position: absolute;
-	top: -4px;
-	right: -3px;
-	color: #fff;
+.New-box-red{
+    background: rgb(255, 61, 27);
+    width: 55px;
+    position: absolute;
+    top: -4px;
+    right: -3px;
+    color: #fff;
 }
 .boxContainer .box .image {
-	position: relative;
-	text-align: center;
-	padding-top: 2rem;
-	overflow: hidden;
-	display: flex;
-	justify-content: center;
+    position: relative;
+    text-align: center;
+    padding-top: 2rem;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
 }
 .boxContainer .box .image img {
-	height: 10rem;
+    height: 10rem;
 }
 .boxContainer .box:hover .image img {
-	transform: scale(1.1);
+    transform: scale(1.1);
 }
 .boxContainer .box .image .icons {
-	position: absolute;
-	bottom: -4.5rem;
-	left: 0;
-	right: 0;
-	justify-content: center;
-	align-items: center;
-	display: flex;
-	gap: 2px;
-	box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.267);
+    position: absolute;
+    bottom: -4.5rem;
+    left: 0;
+    right: 0;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    gap: 2px;
+    box-shadow: 0.5rem 1.5rem rgba(0, 0, 0, 0.267);
 }
 .boxContainer .box:hover .image .icons {
-	bottom: 0;
+    bottom: 0;
 }
-.boxContainer .box .image .icons a {
-	height: 2rem;
-	line-height: 2rem;
-	font-size: 0.9rem;
-	width: 50%;
-	border-radius: 5px;
-	background: #fff;
+.boxContainer .box .image .icons a, .isfavourite {
+    height: 2rem;
+    line-height: 2rem;
+    font-size: 0.9rem;
+    width: 50%;
+    border-radius: 5px;
+    background: #fff;
+    transition: 0.1s;
 }
-.boxContainer .box .image .icons a:hover {
-	color: rgb(0, 245, 0);
+.isfavourite.active{
+    color: rgb(0, 245, 0);
+    filter: drop-shadow(rgb(0, 255, 0)); 
 }
-.boxContainer .box .image .icons .cart-btn {
-	border-left: 0.5rem solid #fff7;
-	border-right: 0.5rem solid #fff7;
-	width: 100%;
+.boxContainer .box .image .icons a:hover{
+    color: rgb(0, 245, 0);
+}
+.boxContainer .box .image .icons .cart-btn, .isfavourite {
+    border-left: 0.5rem solid #fff7;
+    border-right: 0.5rem solid #fff7;
+    width: 100%;
 }
 .boxContainer .box .content {
-	padding: 0rem;
-	float: left;
+    padding: 0rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.content h3, .price{
+    margin: 0;
 }
 
 .boxContainer .box .content h3 {
-	font-size: 1.3rem;
-	color: #333;
-	float: inline-start;
-	margin-left: 8px;
+    font-size: 1rem;
+    color: #333;
+    font-weight: 500;
+    float: inline-start;
+    margin-left: 3px;
+}
+.boxContainer .box .price {
+    font-size: 1.1rem;
+    color: #636262;
+    margin-left: 3px;
+}
+.heading, .ProductsView{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
 }

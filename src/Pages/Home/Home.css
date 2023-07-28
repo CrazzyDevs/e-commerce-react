@@ -11,16 +11,21 @@
 } */
 main {
 	width: 100%;
-	height: 100%;
-	margin-top: 15px;
-	overflow: hidden;
+	height: auto;
+	margin-top: 75px;
+}
+.mainContainer{
+	width: 100%;
+    height: auto;
+    background: #faf9fb;
+    padding: 10px;
+    padding-bottom: 70px;
 }
 
 .banner {
 	width: 100%;
 	height: 23.5rem;
 	border-radius: 10px;
-	/* background: url('../../Components/Banner/BannerImages/Banner6.png') no-repeat center; */
 	background: #fafbf9;
 	background: cover;
 	position: relative;
@@ -30,9 +35,9 @@ main {
 }
 .bannerImage {
 	position: absolute;
-	right: 10px;
-	width: 50%;
-	margin-bottom: -60px;
+    right: 10px;
+    width: 50%;
+    margin-bottom: -60px;
 }
 /* media query here */
 @media (max-width: 900px) {
@@ -57,8 +62,8 @@ main {
 	}
 	.bannerImage {
 		right: 1px;
-		width: 70%;
-		margin-bottom: -260px;
+		width: 60%;
+		margin-bottom: -23rem;
 	}
 	section {
 		display: block;
