@@ -6,6 +6,7 @@ import Skeleton from "../../Components/Skeleton/Skeleton";
 import ProductModal from "../../Components/ProductModal/ProductModal";
 import { Modal } from "antd";
 import SideBar from "../../Components/ProductLeft/SideBar";
+import Navbar from "../../Components/Nav/Navbar";
 
 const SkeletonProduct = () => <Skeleton />;
 
@@ -59,9 +60,10 @@ const Products = () => {
 
 	return (
 		<div className="Products">
+			<Navbar/>
 			{/* menu icon */}
 			<div className="MenuIcon">
-				{menu ? (
+		{menu ? (
 					<i className="fas fa-times" onClick={showMenu}></i>
 				) : (
 					<i className="fas fa-bars" onClick={showMenu}></i>
