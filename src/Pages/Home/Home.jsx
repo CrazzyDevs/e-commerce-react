@@ -1,20 +1,43 @@
 import {} from "react";
+import { useEffect, useState } from 'react'
 import "./Home.css";
 import Banner from "../../Components/Banner/Banner";
 import BannerImage from "../../Components/Banner/BannerImages/Banner6.png";
 import BannerImage2 from "../../Components/Banner/BannerImages/Banner4.jpg";
-import ProductCategoryOne from "../../Components/ProductCategoryOne/ProductCategoryOne";
-import ProductsImage from "../../Components/Banner/BannerImages/Banner5.jpeg";
-import Nav from "../../Components/Nav";
+// import ProductCategoryOne from "../../Components/ProductCategoryOne/ProductCategoryOne";
+// import ProductsImage from "../../Components/Banner/BannerImages/Banner5.jpeg";
+// import Navbar from "../../Components/Navbar";
+import Navbar from "../../Components/Nav/Navbar";
 import InstagramBanner from "../../Components/InstagramBanner";
 import ProductCarousel from "../../Components/Banner/ProductCarousel";
+import HomeProductsListOne from '../../Components/ProductCategoryOne/HomeProductsListOne'
+import { Link } from 'react-router-dom'
 
 const Home = () => {
+	// STATES
+	const [products, setProducts] = useState([]);
+	const [searchQuery, setSearchQuery] = useState('');
+	// API FETCH
+	useEffect(() =>{
+	fetch("https://laravel-api-six.vercel.app/public/api/products/10", {headers: {
+    reqtoken: 'codaxLabr1'
+		}})
+		.then((res) => res.json())
+		.then((data) =>{
+		console.log(data)
+		setProducts(data);
+		});
+	},[]);
+  
+	//search function here
+	const handleSearch = (query) => {
+		setSearchQuery(query);
+	}
 	return (
 		<>
-			<Nav />
+			<Navbar onSearch={handleSearch}/>
 			<main>
-				<div className=" h-[350px] md:h-[400px] bg-[#faf9fb]">
+				<div className="mainContainer">
 					<div className="banner">
 						<Banner link={"#"} name={"User"} discount={1000} />
 						<img
@@ -88,15 +111,9 @@ const Home = () => {
 					</div>
 				</section>
 
-				<section>
-					<ProductCategoryOne
-						ProductImage={ProductsImage}
-						ProductName={"Products name"}
-						Price={1249.99}
-						HotSale={"Hot"}
-						NewProduct={"new"}
-					/>
-				</section>
+			<section>
+			<HomeProductsListOne products={products} searchQuery={searchQuery}/>
+			</section>
 
 				<InstagramBanner />
 				<ProductCarousel />
