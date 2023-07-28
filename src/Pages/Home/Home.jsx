@@ -93,12 +93,14 @@ const Home = () => {
 								<p className="mt-1 text-slate-500">
 									You are in the right place.
 								</p>
+								<Link to="/Products">
 								<a
 									href="#"
 									className="block mt-1 text-lg leading-tight  text-slate-700 font-semibold underline hover:opacity-75 transistion-all duration-300"
 								>
 									View Products
 								</a>
+								</Link>
 							</div>
 							<div className="md:shrink-0 ms-center justify-center flex my-10 m-2">
 								<img
