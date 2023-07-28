@@ -12,7 +12,7 @@ const SideBar = () => {
 	console.log(value);
 	return (
 		<>
-			<div className="w-[270px] ml-10 px-2 pb-20 bg-blue-400 py-2 mt-10 mb-10">
+			<div className="w-[270px] ml-10 px-2 pb-20 bg-blue-400 py-2 mt-2 mb-10">
 				<div className="flex  w-full mt-2 justify-between">
 					<h1 className="text-black text-2xl  font-bold">
 						FILTER BY
